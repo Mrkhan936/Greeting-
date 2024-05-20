@@ -1,0 +1,35 @@
+.container{
+    background-color: skyblue;
+    width: 90%;
+    max-width: 400px;
+    padding: 40px 35px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 100px auto 0;   
+}
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searcharea{
+    border-radius: 25px;
+    padding: 12px  20px;
+    margin: 0px 10px;
+    text-align: center;
+}
+.searchimage{   
+    padding: 7px  7px;
+}
+.btn{
+    border-radius: 30px;
+}
+.detail{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.temprature{
+    font-size: 50px;
+}

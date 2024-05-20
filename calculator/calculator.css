@@ -1,0 +1,22 @@
+.container{
+    text-align: center;
+    
+}
+.button{
+    padding: 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 2px;
+    font-size: larger;
+    background-color: rgb(59, 54, 48);
+    color: white;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input{
+    padding: 20px;
+    border-radius: 12px;
+}
