@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Hover Swap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+US+Trad:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            align-items: center;
+            justify-content: center;
+            color: rgb(14, 13, 13);
+            font-family: "Playwrite US Trad", cursive
+        }
+
+        .button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 5px;
+            color: rgb(238, 232, 232);
+            font-family: "Playwrite US Trad", cursive;
+            background-color: black;
+            border-radius: 5px;
+        }
+
+        #buttonContainer {
+            width: 400px;
+            height: 500px;
+            background-color: blanchedalmond;
+            background-size: cover;
+            background-image: url(love.jpeg);
+            text-align: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            border: 2px solid rgb(103, 9, 17);
+            box-shadow: 12px 12px lightpink;
+        }
+
+        .heading {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="buttonContainer">
+        <h1 class="heading">Will you marry me</h1>
+        <button id="yesButton" class="button">Yes</button>
+        <button id="noButton" class="button">No</button>
+    </div>
+
+    <script>
+        const container = document.getElementById('buttonContainer');
+        const yesButton = document.getElementById('yesButton');
+        const noButton = document.getElementById('noButton');
+        let temp = yesButton.textContent;
+        let temp2 = noButton.textContent;
+        document.getElementById('noButton').addEventListener("mouseover", () => {
+            if (noButton.innerText === temp2) {
+                noButton.textContent = temp;
+                yesButton.textContent = temp2;
+            }
+        });
+        document.getElementById('yesButton').addEventListener("mouseover", () => {
+            if (yesButton.innerText === temp2) {
+                noButton.textContent = temp2;
+                yesButton.textContent = temp;
+
+            }
+        });
+    </script>
+</body>
+
+</html>
